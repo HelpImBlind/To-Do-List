@@ -1,0 +1,128 @@
+
+html {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+body {
+    height: 100vh;
+}
+
+main {
+    background: #000000;
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(84, 84, 84, 1) 26%, rgba(148, 126, 126, 1) 57%, rgba(250, 246, 237, 1) 100%);
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(84, 84, 84, 1) 26%, rgba(148, 126, 126, 1) 57%, rgba(250, 246, 237, 1) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(84, 84, 84, 1) 26%, rgba(148, 126, 126, 1) 57%, rgba(250, 246, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#FAF6ED", GradientType=0);
+    
+}
+
+.list-height {
+    height: 90%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ul-box {
+    box-shadow: 0px -59px 31px 0px #424242 inset;
+}
+
+h2, p {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.btn {
+    min-width: 150px;
+}
+
+#card-list li {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.custom-card {
+    background: #86a4b5;
+    background: -webkit-linear-gradient(198deg, rgba(134, 164, 181, 1) 0%, rgba(18, 16, 23, 1) 100%);
+    background: -moz-linear-gradient(198deg, rgba(134, 164, 181, 1) 0%, rgba(18, 16, 23, 1) 100%);
+    background: linear-gradient(198deg, rgba(134, 164, 181, 1) 0%, rgba(18, 16, 23, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#86A4B5", endColorstr="#121017", GradientType=0);
+    border: none;
+    max-width: 500px;
+    width: 100%;
+    
+}
+
+.custom-card-display-add {
+    animation: fadeInUp 0.4s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.custom-card-display-delete {
+    animation: fadeOut 0.3s ease-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}
+
+/* #delete {
+    max-height: 100%;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+} */
+
+/* #delete:checked {
+    transform: translateY(-2%);
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+} */
+
+.delete-label {
+    opacity: 0;
+    max-height: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
+}
+
+#delete:checked ~ .delete-label {
+    max-height: 100%;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.delete-card {
+    opacity: 0.5;
+    transition: opacity 0.25s ease-in;
+}
+
+/* .card-deleted {
+    opacity: 0;
+    transition: opacity 0.25s ease-out;
+} */
+
+
